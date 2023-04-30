@@ -1,0 +1,530 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Oleo Script+', cursive;
+}
+
+body {
+    margin: 0;
+}
+
+/* Header Section */
+
+.full-screen-header {
+    height: 100vh;
+    background-image: url('./img/coffee-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 100%;
+    background-position-y: top;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex: 0 1 50%;
+}
+
+/* Navbar Section */
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    padding: .5rem 1rem;
+}
+
+.nav-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.logo {
+    height: 100px;
+    width: 150px;
+    margin-right: auto;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-list li {
+    margin-left: 30px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    outline: none;
+}
+
+.nav-list a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: rgb(211, 85, 85);
+    margin: auto;
+    display: block;
+}
+
+.nav-list a:hover::after,
+.nav-list a:focus::after {
+    width: 100%;
+    transition: width 0.3s linear;
+}
+
+.nav-list a:hover {
+    color: rgb(211, 85, 85);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* Title Section */
+
+.sub-title {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.transparent-background {
+    background-color: rgba(213, 201, 201, 0.8);;
+    color: #1B2522;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    border: 1px solid rgb(253, 153, 39);
+    background-color: rgb(253, 153, 39);
+    padding: .5em 1em;
+    border-radius: .3em;
+    margin-top: 3rem;
+    color: black;
+    outline: none;
+    text-align: center;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: rgb(187, 117, 52);
+}
+
+/* Heading text */
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.md-text {
+    font-weight: bold;
+}
+
+.testimonial-big-heading {
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Containers */
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* Coffee Options */
+
+.testimonials {
+    background-image: linear-gradient(90deg, #00000084, #0000009a), url('./img/Background-Coffee.jpg');
+    text-align: center;
+    color: #fff;
+}
+
+.testimonial-heading {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.testimonial-text {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-top: 1.5rem;
+    padding-inline: 15%;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 5px;
+}
+
+.testimonial-image {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
+}
+
+/* Our Special */
+
+.dark-background {
+    background-color: rgb(50, 41, 41);
+}
+
+.special-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: lightgray;
+    align-items: center;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.special-item-1 {
+    margin: 0 auto;
+}
+
+.special-item-1 img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.special-item-2 {
+    line-height: 1.7;
+}
+
+.special-item-2 h2 {
+    text-decoration: underline;
+}
+
+.special-item-2 p {
+    font-size: 1.2rem;
+}
+
+/* Our Shop */
+
+.about-us {
+    background-color: #ad6d2f;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Contact */
+
+.contact {
+    text-align: center;
+}
+
+.form {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.form label {
+    color: black;
+    font-weight: bold;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    margin-top: .25rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 1px solid #1B2522;
+    border-radius: .3em;
+    padding: .5em;
+    color: inherit;
+    font-family: inherit;
+}
+
+.btn-container {
+    text-align: right;
+}
+
+.button {
+    background-color: rgb(253, 153, 39);
+    padding: .5em 1em;
+    border-radius: .3em;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.button:hover,
+.button:focus {
+    background-color: rgb(187, 117, 52);
+}
+
+/* Footer */
+
+.footer {
+    background-image: url('./img/Footer-Background.jpg');
+    background-size: cover;
+    background-position-x: 100%;
+    background-position-y: 60%;
+    padding: 5% 10%;
+}
+
+.footer-text {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-subtext span {
+    text-decoration: underline;
+    text-decoration-color: rgb(211, 85, 85);
+    text-underline-offset: 3px;
+}
+
+.footer-bottom-text {
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.media-icons {
+    font-size: 1.2rem;
+}
+
+.fa-facebook-square,
+.fa-instagram-square,
+.fa-twitter-square {
+    padding-right: 1.2rem;
+    cursor: pointer;
+}
+
+/* Mobile Version */
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .nav-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .toggle-button {
+        display: flex;
+        margin-top: 1.5rem;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list li {
+        text-align: center;
+        margin: .5rem;
+    }
+
+    .nav-list li a {
+        display: block;
+        border: 1px solid rgb(206, 125, 32);
+        border-radius: 10px;
+        background-color: rgb(253, 153, 39);
+        color: white;
+        padding: 5px 20px;
+        font-size: .8rem;
+        width: 130%;
+    }
+    
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul {
+        width: 35%;
+        flex-direction: column;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list a::after {
+        display: none;
+    }
+
+    .nav-list a:hover,
+    .nav-list a:focus {
+        background-color: rgb(206, 125, 32);
+        color: white;
+    }
+
+    .logo {
+        width: 90px;
+        height: 70px;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .sub-title {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Mobile Coffee Section */
+
+    .cff-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cff-item img {
+        width: 100px;
+        margin-top: 15px;
+    }
+
+    .cff-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .section-sub-title {
+        font-size: 1.5rem;
+    }
+
+    /* Mobile Special */
+
+    .special-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .special-item-1 img {
+        width: 220px;
+    }
+
+    .special-item-2 h2 {
+        text-align: center;
+    }
+
+    .special-item-2 p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* About Us */
+
+    
+
+    /* Contact */
+
+    .btn-container {
+        text-align: center;
+    }
+
+    /* Footer */
+
+    .footer-text {
+        flex-direction: column;
+    }
+
+    .footer-subtext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-subtext p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .footer-subtext h2 {
+        font-size: 20px;
+    }
+
+    .footer-bottom-text {
+        padding: 0;
+    }
+
+    .media-icons {
+        margin-top: .5rem;
+    }
+
+}
+
+@media only screen and (max-width: 1150px) {
+    .transparent-background {
+        margin-top: 5rem;
+    }
+
+    .special-item-1 img {
+        width: 300px;
+    }
+
+    .special-item-2 {
+        text-align: center;
+    }
+
+    .special-item-2 p {
+        font-size: 16px;
+    }
+
+    .special-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-us-text {
+        text-align: center;
+        padding: 0;
+        padding-top: 5rem;
+    }
+
+    .about-us {
+        background-position-x: 10%;
+    }
+
+    .transparent-background {
+        color: #1B2522;
+        padding: 3rem;
+        margin-top: 5rem;
+    }
+}
