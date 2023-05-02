@@ -277,8 +277,19 @@ body {
 /* Contact */
 
 .contact {
-    text-align: center;
     color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin: 0 auto;
+}
+
+.cff-cup {
+    width: 100%;
+    max-width: 400px;
 }
 
 .form {
@@ -303,10 +314,6 @@ body {
     padding: .5em;
     color: inherit;
     font-family: inherit;
-}
-
-.btn-container {
-    text-align: right;
 }
 
 .button {
@@ -482,6 +489,10 @@ body {
 
     .btn-container {
         text-align: center;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
     }
 
     /* Footer */
