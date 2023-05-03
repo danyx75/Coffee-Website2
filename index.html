@@ -4,45 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Website Title-->
     <title>Coffee Shop</title>
+    <!--Coffee Tab Icon-->
     <link rel="shortcut icon" href="./Coffee-icon.ico" type="image/x-icon">
     <link rel="icon" href="./Coffee-icon.ico" type="image/x-icon">
+    <!--Font Awesome-->
     <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.min.css">
+    <!--Bootstrap and CSS Files-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    <script src="./script.js" defer></script>
 </head>
+
 <body>
     <header class="full-screen-header">
-        <nav class="nav nav-top">
-            <img class="logo" alt="coffee-shop-logo" src="./img/pngegg.png">
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
 
-            <ul class="nav-list">
-                <li><a href="#">Welcome</a></li>
-                <li><a href="#we-offer">We Offer</a></li>
-                <li><a href="#our-shop">Our Shop</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <!--Navbar-->
+
+        <nav class="navbar navbar-expand-lg nav-top">
+            <a href="#">
+                <img class="logo" alt="coffee-shop-logo" src="./img/pngegg.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#we-offer">We Offer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-shop">Our Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        
         </nav>
+
+        <!--Main Page-->
+
         <div class="transparent-background">
-            <h1 class="title">Coffee - Makes You Love</h1>
+            <h1 class="biggest-heading">Coffee - Makes You Love</h1>
             <span class="sub-title">A lot Can Happen Over Coffee, It's Awesome!</span>
             <a class="btn" href="#today-special">Today Special</a>
         </div>
     </header>
     <main>
+
+        <!--Testimonials Coffee Section-->
+
         <section id="we-offer" class="testimonials">
 
             <div id="carouselExampleIndicators" class="carousel slide">
 
                 <div class="container-fluid">
-                    <h2 class="testimonial-big-heading">Our Top Sellers</h2>
+                    <h2 class="big-heading">Our Top Sellers</h2>
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -92,9 +115,11 @@
             
             </div>
 
+            <!--Menu section-->
+
             <div class="container-fluid">
 
-                <h2 class="testimonial-big-heading">Here's the rest of our menu</h2>
+                <h2 class="big-heading">Here's the rest of our menu</h2>
                 <div class="cff-grid cff-name">
                     <h3>Coffee Drinks</h3>
                     <h3>Price</h3>
@@ -153,6 +178,9 @@
             </div>
 
         </section>
+
+        <!--Special Coffee Section-->
+
         <section id="today-special" class="dark-background">
             <div class="container-fluid">
                 <div class="special-grid">
@@ -160,27 +188,33 @@
                         <img src="./img/Espresso-Con-Panna.jpg" alt="Espresso Con Panna">
                     </div>
                     <div class="special-item-2">
-                        <h2 class="md-text">Espresso Con Panna</h2>
+                        <h2 class="big-heading">Espresso Con Panna</h2>
                         <p>Espresso con panna, which means "espresso with cream" in Italian, is a single or double shot of espresso topped with whipped cream.  This is our customer's top coffee drinks we sell in our shop and we made it as a special drink so come try it out!</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!--About Us Section-->
+
         <section id="our-shop">
             <div class="container-fluid about-us">
                 <div class="about-us">
-                    <h2 class="md-text">About Us</h2>
+                    <h2 class="big-heading">About Us</h2>
                     <p>We are a family own business and we show a lot of texture to our coffee's, to make sure our customers get the most delicous coffee's or smoothies to start off their day, so come try it out! </p>
                 </div>
             </div>
             </div>
         </section>
+
+        <!--Contact Section-->
+
         <section id="contact" class="dark-background">
             <div class="container-fluid">
                 <div class="grid-container">
                     <div>
                         <div class="contact">
-                            <h2 class="md-text">Contact Us</h2>
+                            <h2 class="big-heading">Contact Us</h2>
                             <p>Have any question's about us please feel free to contact us!</p>
                         </div>
                         <form class="form">
@@ -202,16 +236,19 @@
             </div>
         </section>
     </main>
+
+    <!--Footer Section-->
+
     <footer class="footer">
         <div class="footer-text">
             <div class="footer-subtext">
-                <h2 class="md-text">Get In Touch</h2>
+                <h3 class="md-heading">Get In Touch</h3>
                 <p>Phone: 847 634 4831</p>
                 <p>or <span>send us an email at<br>coffeeshopco.@gmail.com</span></p>
 
             </div>
             <div class="footer-subtext">
-                <h2 class="md-text">We're Hiring!</h2>
+                <h3 class="md-heading">We're Hiring!</h3>
                 <p>Want A job? And don't have experience,<br> no worries <span>we'll train you!</span></p>
             </div>
         </div>
