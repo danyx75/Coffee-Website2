@@ -18,6 +18,9 @@
 </head>
 
 <body>
+
+    <!--Header Section-->
+
     <header class="full-screen-header">
 
         <!--Navbar-->
@@ -48,7 +51,7 @@
         
         </nav>
 
-        <!--Main Page-->
+        <!--Main First Page-->
 
         <div class="transparent-background">
             <h1 class="biggest-heading">Coffee - Makes You Love</h1>
@@ -56,6 +59,7 @@
             <a class="btn" href="#today-special">Today Special</a>
         </div>
     </header>
+
     <main>
 
         <!--Testimonials Coffee Section-->
@@ -183,13 +187,13 @@
 
         <section id="today-special" class="dark-background">
             <div class="container-fluid">
-                <div class="special-grid">
-                    <div class="special-item-1">
-                        <img src="./img/Espresso-Con-Panna.jpg" alt="Espresso Con Panna">
-                    </div>
+                <div class="grid-container special-grid">
                     <div class="special-item-2">
                         <h2 class="big-heading">Espresso Con Panna</h2>
                         <p>Espresso con panna, which means "espresso with cream" in Italian, is a single or double shot of espresso topped with whipped cream.  This is our customer's top coffee drinks we sell in our shop and we made it as a special drink so come try it out!</p>
+                    </div>
+                    <div class="special-item-1">
+                        <img class="cff-image" src="./img/Espresso-Con-Panna.jpg" alt="Espresso Con Panna">
                     </div>
                 </div>
             </div>
@@ -199,9 +203,14 @@
 
         <section id="our-shop">
             <div class="container-fluid about-us">
-                <div class="about-us">
-                    <h2 class="big-heading">About Us</h2>
-                    <p>We are a family own business and we show a lot of texture to our coffee's, to make sure our customers get the most delicous coffee's or smoothies to start off their day, so come try it out! </p>
+                <div class="grid-container special-grid">
+                    <div class="special-item-1">
+                        <img class="cff-image" src="./img/about-us.jpg" alt="about us image">
+                    </div>
+                    <div class="special-item-2">
+                        <h2 class="big-heading">About Us</h2>
+                        <p>We are a family own business and we show a lot of texture to our coffee's, to make sure our customers get the most delicous coffee's or smoothies to start off their day, so come try it out! </p>
+                    </div>
                 </div>
             </div>
             </div>
@@ -211,26 +220,28 @@
 
         <section id="contact" class="dark-background">
             <div class="container-fluid">
-                <div class="grid-container">
+                <div class="grid-container grid-contact-container">
                     <div>
                         <div class="contact">
                             <h2 class="big-heading">Contact Us</h2>
                             <p>Have any question's about us please feel free to contact us!</p>
                         </div>
+
                         <form class="form">
                             <label for="name">Name</label>
                             <input type="text" name="name" id="name">
                             <label for="email">Email</label>
                             <input type="email" name="email" id="email">
                             <label for="message">Message</label>
-                            <textarea name="message" id="message" cols="30" rows="5" placeholder="Send us a comment..."></textarea>
+                            <textarea name="message" id="message" cols="30" rows="5" placeholder="Send us a message..."></textarea>
                             <div class="btn-container">
                                 <button class="button" type="submit">Send</button>
                             </div>
                         </form>
                     </div>
+
                     <div>
-                        <img class="cff-cup" src="./img/Coffee-cup.png" alt="">
+                        <img class="cff-cup" src="./img/Coffee-cup.png" alt="coffee cup">
                     </div>
                 </div>
             </div>
