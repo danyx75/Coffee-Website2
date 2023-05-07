@@ -17,13 +17,11 @@ body {
     background-size: cover;
     background-position-x: 100%;
     background-position-y: top;
-    padding: 7% 15%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    flex: 0 1 50%;
 }
 
 /* Navbar Section */
@@ -455,7 +453,7 @@ body {
 
 @media only screen and (max-width: 1150px) {
     .transparent-background {
-        padding: 3rem;
+        padding: 2rem;
     }
 
     .special-item-2 {
