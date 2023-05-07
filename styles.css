@@ -90,7 +90,7 @@ body {
 .transparent-background {
     background-color: rgba(213, 201, 201, 0.8);;
     color: #1B2522;
-    padding: 5rem 4rem;
+    padding: 5rem;
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
@@ -355,7 +355,7 @@ body {
     /* Mobile Headings */
 
     .biggest-heading {
-        font-size: 2rem;
+        font-size: 1.7rem;
         text-align: center;
     }
     
