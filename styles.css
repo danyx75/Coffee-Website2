@@ -11,13 +11,13 @@ body {
 /* Header Section */
 
 .full-screen-header {
-    height: 100vh;
+    
     background-image: url('./img/coffee-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 100%;
     background-position-y: top;
-    padding: 2rem;
+    padding: 7% 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
