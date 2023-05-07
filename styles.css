@@ -354,8 +354,12 @@ body {
 
     /* Mobile Headings */
 
+    .transparent-background {
+        padding: 2rem;
+    }
+
     .biggest-heading {
-        font-size: 1.7rem;
+        font-size: 2rem;
         text-align: center;
     }
     
