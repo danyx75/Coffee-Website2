@@ -26,6 +26,15 @@ body {
 
 /* Navbar Section */
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28253, 153, 39, 0.80%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    border: 2px solid rgb(253, 153, 39);
+    color: rgb(206, 125, 32);
+}
+
 .nav-top {
     position: fixed;
     top: 0;
@@ -390,7 +399,6 @@ body {
 
     .nav-list li a {
         display: block;
-        border: 1px solid rgb(206, 125, 32);
         border-radius: 10px;
         background-color: rgb(253, 153, 39);
         width: 50%;
