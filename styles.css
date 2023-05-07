@@ -353,7 +353,7 @@ body {
 .fa-facebook-square,
 .fa-instagram-square,
 .fa-twitter-square {
-    padding-right: 1.2rem;
+    padding-inline: 1.2rem;
     cursor: pointer;
 }
 
