@@ -11,7 +11,7 @@ body {
 /* Header Section */
 
 .full-screen-header {
-    
+    background-attachment: fixed;
     background-image: url('./img/coffee-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,6 +170,7 @@ body {
 
 .testimonials {
     background-image: linear-gradient(90deg, #000000b5, #000000b0), url('./img/Background-Coffee.jpg');
+    background-attachment: fixed;
     text-align: center;
     color: #fff;
 }
